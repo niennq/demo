@@ -1,13 +1,180 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maosoft Vietnamese Digital Services Landing Page</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaoSoft - Cung cấp tài khoản uy tín</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <h2 class="mb-0 text-primary fw-bold">maosoft</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
+                            <button class="btn btn-primary" type="button" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="header-contact text-end">
+                        <a href="https://zalo.me/0123456789" class="btn btn-outline-primary btn-sm me-2">
+                            <i class="fab fa-telegram"></i> Zalo
+                        </a>
+                        <a href="https://wa.me/0123456789" class="btn btn-outline-success btn-sm">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="categories-menu">
+                    <h5 class="category-title">DANH MỤC</h5>
+                    <ul class="category-list">
+                        <li><a href="#" data-category="all" class="category-link active">Tất cả sản phẩm</a></li>
+                        <li><a href="#" data-category="ai" class="category-link">Tài khoản AI</a></li>
+                        <li><a href="#" data-category="facebook" class="category-link">Facebook</a></li>
+                        <li><a href="#" data-category="instagram" class="category-link">Instagram</a></li>
+                        <li><a href="#" data-category="tiktok" class="category-link">TikTok</a></li>
+                        <li><a href="#" data-category="youtube" class="category-link">YouTube</a></li>
+                        <li><a href="#" data-category="telegram" class="category-link">Telegram</a></li>
+                        <li><a href="#" data-category="shopee" class="category-link">Shopee</a></li>
+                        <li><a href="#" data-category="premium" class="category-link">Tài khoản Premium</a></li>
+                        <li><a href="#" data-category="netflix" class="category-link">Netflix</a></li>
+                        <li><a href="#" data-category="design" class="category-link">Thiết kế</a></li>
+                        <li><a href="#" data-category="microsoft" class="category-link">Microsoft</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="col-md-9 col-lg-10">
+                <div class="products-section">
+                    <div class="row" id="productsContainer">
+                        <!-- Products will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Modal content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-widget">
+                        <h5 class="footer-title">maosoft</h5>
+                        <p>Địa chỉ: Thành phố Hồ Chí Minh</p>
+                        <p>E-mail: contact@maosoft.mas.vn</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-phone"></i></a>
+                        </div>
+                        <div class="newsletter">
+                            <h6>Đăng Ký Nhận Tin Tức Mới Từ Maosoft</h6>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Địa chỉ email">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h6 class="footer-widget-title">Sản phẩm bán chạy</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Adobe Creative Cloud</a><span>Chỉ từ 2,000đ ngày</span></li>
+                            <li><a href="#">Elsa Premium</a><span>Chỉ từ 2,000đ ngày</span></li>
+                            <li><a href="#">Discord Nitro</a><span>Chỉ từ 2,000đ ngày</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-widget">
+                        <h6 class="footer-widget-title">Dịch vụ phổ biến</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">ChatGPT Plus</a></li>
+                            <li><a href="#">Discord Nitro Basic</a></li>
+                            <li><a href="#">ELSA Pro</a></li>
+                            <li><a href="#">Tinder Platinum</a></li>
+                            <li><a href="#">Youtube Premium</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h6 class="footer-widget-title">Các Liên Kết Khác</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Về Maosoft</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Bảo Hành & Hoàn Tiền</a></li>
+                            <li><a href="#">Điều Khoản Dịch Vụ</a></li>
+                            <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0">© 2025 <strong>maosoft</strong>. All Rights Reserved.</p>
+                            <div class="payment-methods">
+                                <span>Phương thức thanh toán:</span>
+                                <img src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=50&h=30" alt="Visa" class="payment-icon">
+                                <img src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=50&h=30" alt="Mastercard" class="payment-icon">
+                                <img src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=50&h=30" alt="PayPal" class="payment-icon">
+                                <img src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=50&h=30" alt="Momo" class="payment-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
