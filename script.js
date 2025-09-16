@@ -3,152 +3,424 @@ const products = [
     {
         id: 1,
         category: 'ai',
-        title: 'ChatGPT Plus 3 tháng',
-        subtitle: 'Chỉ với 500k / 3 tháng.',
-        image: '/assets/images/chatGPT.jpg',
-            originalPrice: '180,000đ / 3 tháng',
-            salePrice: '100,000đ / 3 tháng',
-            discount: 'GIẢM LÊN TỚI 45%',
-        processingTime: 'trong vòng 24h',
+        title: 'ChatGPT Plus',
+        subtitle: 'Chỉ với 3,000đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/8438979/pexels-photo-8438979.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '21,000đ',
+        salePrice: '3,000đ',
+        discount: 'GIẢM LÊN TỚI 67%',
+        processingTime: '15-60 phút',
         version: 'ChatGPT Plus',
         description: 'Truy cập ChatGPT Plus với tốc độ cao và nhiều tính năng nâng cao',
         features: [
             'Truy cập ưu tiên ngay cả khi có nhu cầu cao',
             'Phản hồi nhanh hơn từ ChatGPT',
             'Truy cập sớm vào các tính năng và cải tiến mới',
-            'Giao diện web ổn định',
-            'Không giới hạn hình ảnh và file đính kèm'
+            'Giao diện web ổn định'
         ],
         whyBuy: 'ChatGPT Plus giúp bạn làm việc hiệu quả hơn với AI thông minh nhất hiện tại. Phù hợp cho sinh viên, freelancer và các chuyên gia.',
-        sku: 'CHATGPT_PLUS'
+        sku: 'CHATGPT_PLUS',
+        comparisonData: {
+            title: 'So sánh ChatGPT Plus vs. ChatGPT Free',
+            headers: ['Tiêu chí', 'ChatGPT Plus', 'ChatGPT Free'],
+            rows: [
+                {
+                    feature: 'Tốc độ phản hồi',
+                    licensed: 'Nhanh, ưu tiên cao',
+                    free: 'Chậm khi có nhiều người dùng'
+                },
+                {
+                    feature: 'Khả năng truy cập',
+                    licensed: 'Luôn có thể truy cập',
+                    free: 'Bị giới hạn khi quá tải'
+                },
+                {
+                    feature: 'Tính năng mới',
+                    licensed: 'Truy cập sớm các tính năng mới',
+                    free: 'Chờ đợi phát hành công khai'
+                },
+                {
+                    feature: 'Model AI',
+                    licensed: 'GPT-4 và các model mới nhất',
+                    free: 'GPT-3.5 cơ bản'
+                },
+                {
+                    feature: 'Hỗ trợ',
+                    licensed: 'Hỗ trợ ưu tiên từ OpenAI',
+                    free: 'Hỗ trợ cộng đồng'
+                }
+            ]
+        }
     },
     {
         id: 2,
         category: 'design',
-            title: 'Canva Pro',
-            subtitle: 'Canva Pro giá tốt nhất thị trường',
-            image: 'https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
-            originalPrice: '10,000đ / 1 tháng',
-            salePrice: '50,000đ / 6 tháng',
-            discount: 'GIẢM LÊN TỚI 80%',
-            processingTime: 'trong vòng 24h',
-            version: 'Canva Pro',
-            description: 'Canva Pro bản quyền, hỗ trợ đầy đủ tính năng thiết kế chuyên nghiệp.',
-            features: [
-                'Tặng kèm Canva 1 tháng khi mua gói khác',
-                '6 tháng: 50k',
-                '1 năm: 80k',
-                'Vĩnh viễn: 140k',
-                'Kho template, stock ảnh, video khổng lồ',
-                'Hỗ trợ team, chia sẻ dự án',
-                'Tính năng AI thiết kế nhanh'
-            ],
-            whyBuy: 'Canva Pro giúp bạn thiết kế chuyên nghiệp, tiết kiệm chi phí, phù hợp cho cá nhân và doanh nghiệp.',
-            sku: 'CANVA_PRO'
+        title: 'Adobe Creative Cloud',
+        subtitle: 'Chỉ với 2,000đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '21,000đ',
+        salePrice: '2,000đ',
+        discount: 'GIẢM LÊN TỚI 90%',
+        processingTime: '15-60 phút',
+        version: 'Adobe All Apps',
+        description: 'Gói phần mềm Creative Cloud đầy đủ với hơn 20 ứng dụng chuyên nghiệp',
+        features: [
+            'Trên 20 ứng dụng bao gồm Photoshop, Illustrator, Premiere Pro',
+            'After Effects, Lightroom, InDesign, Acrobat Pro DC',
+            'XD, Audition, và nhiều hơn nữa',
+            'Đồng bộ cloud và chia sẻ dự án'
+        ],
+        whyBuy: 'Giải pháp hoàn hảo cho designer, photographer và video editor chuyên nghiệp.',
+        sku: 'ADOBE_CREATIVE_CLOUD',
+        comparisonData: {
+            title: 'So sánh bản quyền vs. crack',
+            headers: ['Tiêu chí', 'Bản quyền', 'Crack'],
+            rows: [
+                {
+                    feature: 'Tính ổn định',
+                    licensed: 'Mượt mà, cập nhật chính thức',
+                    free: 'Dễ lỗi, treo máy'
+                },
+                {
+                    feature: 'Cập nhật',
+                    licensed: 'Tự động lên phiên bản mới',
+                    free: 'Không cập nhật được'
+                },
+                {
+                    feature: 'Bảo mật',
+                    licensed: 'An toàn, không mã độc',
+                    free: 'Nguy cơ virus, trojan'
+                },
+                {
+                    feature: 'Tính năng',
+                    licensed: '100% AI & plugin chính hãng',
+                    free: 'Nhiều tính năng bị vô hiệu'
+                },
+                {
+                    feature: 'Hỗ trợ',
+                    licensed: 'Adobe & maosoft 1:1',
+                    free: 'Tự xử lý'
+                },
+                {
+                    feature: 'Pháp lý',
+                    licensed: 'Hợp pháp, yên tâm',
+                    free: 'Vi phạm bản quyền'
+                }
+            ]
+        }
     },
     {
         id: 3,
         category: 'design',
-            title: 'Netflix Chính Chủ',
-            subtitle: 'Netflix chính chủ giá tốt',
-            image: 'https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
-            originalPrice: '88,000đ / 1 tháng',
-            salePrice: '60,000đ / 1 tháng',
-            discount: 'GIẢM LÊN TỚI 32%',
-            processingTime: 'trong vòng 24h',
-            version: 'Netflix Chính Chủ',
-            description: 'Netflix chính chủ, dùng cho máy tính và TV, không lo bị out.',
-            features: [
-                '1 tháng: 60k',
-                '3 tháng: 120k',
-                '6 tháng: 190k',
-                '1 năm: 290k',
-                'Xem phim chất lượng cao, không quảng cáo',
-                'Hỗ trợ nhiều thiết bị',
-                'Chính chủ, không lo bị out'
-            ],
-            whyBuy: 'Netflix chính chủ giúp bạn xem phim chất lượng cao, ổn định, không lo bị out, giá tốt nhất.',
-            sku: 'NETFLIX_CHINH_CHU'
+        title: 'Github Copilot',
+        subtitle: 'Chỉ với 1,200đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '10,000đ',
+        salePrice: '600đ',
+        discount: 'GIẢM LÊN TỚI 94%',
+        processingTime: '15-30 phút',
+        version: 'Github Copilot Pro',
+        description: 'AI programming assistant giúp code nhanh hơn và thông minh hơn',
+        features: [
+            'Gợi ý code thông minh với AI',
+            'Hỗ trợ nhiều ngôn ngữ lập trình',
+            'Tích hợp với VS Code và IDE phổ biến',
+            'Tăng tốc quá trình development'
+        ],
+        whyBuy: 'Công cụ không thể thiếu cho developer muốn tăng productivity và học hỏi cách code tốt hơn.',
+        sku: 'GITHUB_COPILOT',
+        comparisonData: {
+            title: 'So sánh GitHub Copilot vs. Free alternatives',
+            headers: ['Tiêu chí', 'GitHub Copilot', 'Free alternatives'],
+            rows: [
+                {
+                    feature: 'Độ chính xác',
+                    licensed: 'AI được training trên code chất lượng cao',
+                    free: 'Độ chính xác thấp hơn'
+                },
+                {
+                    feature: 'Ngôn ngữ hỗ trợ',
+                    licensed: 'Hỗ trợ đầy đủ mọi ngôn ngữ',
+                    free: 'Giới hạn ngôn ngữ'
+                },
+                {
+                    feature: 'Tích hợp IDE',
+                    licensed: 'Tích hợp mượt mà với VS Code, JetBrains',
+                    free: 'Tích hợp hạn chế'
+                },
+                {
+                    feature: 'Bảo mật code',
+                    licensed: 'Bảo mật cao, không lưu trữ code',
+                    free: 'Không đảm bảo bảo mật'
+                },
+                {
+                    feature: 'Cập nhật',
+                    licensed: 'Cập nhật model AI thường xuyên',
+                    free: 'Ít cập nhật'
+                }
+            ]
+        }
     },
     {
         id: 4,
         category: 'ai',
-            title: 'Gemini Pro + VEO3',
-            subtitle: 'Gemini Pro + VEO3 giá tốt',
-            image: 'https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
-            originalPrice: '50,000đ / 1 tháng',
-            salePrice: '25,000đ / 1 tháng',
-            discount: 'GIẢM LÊN TỚI 50%',
-            processingTime: 'trong vòng 24h',
-            version: 'Gemini Pro + VEO3',
-            description: 'Gemini Pro + VEO3 bản quyền, hỗ trợ AI đa phương tiện, giá tốt nhất.',
-            features: [
-                '1 tháng: 25k',
-                'Xử lý văn bản, hình ảnh, video',
-                'Tích hợp Google Workspace',
-                'Hỗ trợ nhiều ngôn ngữ',
-                'VEO3 tặng kèm'
-            ],
-            whyBuy: 'Gemini Pro + VEO3 giúp bạn trải nghiệm AI mạnh mẽ, giá tốt, hỗ trợ đa phương tiện.',
-            sku: 'GEMINI_VEO3'
+        title: 'Gemini Advanced',
+        subtitle: 'Chỉ với 1,500đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '15,000đ',
+        salePrice: '1,500đ',
+        discount: 'GIẢM LÊN TỚI 90%',
+        processingTime: '15-30 phút',
+        version: 'Gemini Ultra',
+        description: 'AI model mạnh nhất của Google với khả năng xử lý đa phương tiện',
+        features: [
+            'Xử lý văn bản, hình ảnh và code',
+            'Phản hồi nhanh và chính xác cao',
+            'Tích hợp với Google Workspace',
+            'Hỗ trợ nhiều ngôn ngữ'
+        ],
+        whyBuy: 'Lựa chọn tuyệt vời thay thế ChatGPT với nhiều tính năng độc đáo từ Google.',
+        sku: 'GEMINI_ADVANCED',
+        comparisonData: {
+            title: 'So sánh Gemini Advanced vs. Gemini Free',
+            headers: ['Tiêu chí', 'Gemini Advanced', 'Gemini Free'],
+            rows: [
+                {
+                    feature: 'Model AI',
+                    licensed: 'Gemini Ultra - model mạnh nhất',
+                    free: 'Gemini Pro - model cơ bản'
+                },
+                {
+                    feature: 'Giới hạn sử dụng',
+                    licensed: 'Không giới hạn câu hỏi',
+                    free: 'Giới hạn số lượng câu hỏi'
+                },
+                {
+                    feature: 'Xử lý đa phương tiện',
+                    licensed: 'Xử lý hình ảnh, video, audio chất lượng cao',
+                    free: 'Xử lý cơ bản'
+                },
+                {
+                    feature: 'Tích hợp Google',
+                    licensed: 'Tích hợp sâu với Google Workspace',
+                    free: 'Tích hợp hạn chế'
+                },
+                {
+                    feature: 'Ưu tiên xử lý',
+                    licensed: 'Xử lý ưu tiên, tốc độ cao',
+                    free: 'Tốc độ chậm khi quá tải'
+                }
+            ]
+        }
     },
     {
         id: 5,
         category: 'youtube',
-            title: 'YouTube Premium',
-            subtitle: 'YouTube Premium giá tốt nhất',
-            image: 'https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
-            originalPrice: '28,000đ / 1 tháng',
-            salePrice: '25,000đ / 1 tháng',
-            discount: 'GIẢM LÊN TỚI 10%',
-            processingTime: 'trong vòng 24h',
-            version: 'YouTube Premium',
-            description: 'YouTube Premium bản quyền, không quảng cáo, nghe nhạc offline.',
-            features: [
-                '1 tháng: 25k',
-                '3 tháng: 60k',
-                '6 tháng: 110k',
-                '1 năm: 180k',
-                'Không quảng cáo',
-                'Nghe nhạc offline',
-                'YouTube Music Premium đi kèm'
-            ],
-            whyBuy: 'YouTube Premium giúp bạn trải nghiệm xem video không quảng cáo, nghe nhạc offline, giá tốt nhất.',
-            sku: 'YOUTUBE_PREMIUM'
+        title: 'YouTube Premium',
+        subtitle: 'Chỉ với 600đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '2,000đ',
+        salePrice: '2,000đ',
+        discount: 'GIẢM LÊN TỚI 45%',
+        processingTime: '5-15 phút',
+        version: 'YouTube Premium Family',
+        description: 'Xem YouTube không quảng cáo và nghe nhạc offline',
+        features: [
+            'Không có quảng cáo trên YouTube',
+            'Phát video khi tắt màn hình',
+            'Tải video để xem offline',
+            'YouTube Music Premium đi kèm'
+        ],
+        whyBuy: 'Trải nghiệm YouTube tối ưu nhất cho người dùng thường xuyên.',
+        sku: 'YOUTUBE_PREMIUM',
+        comparisonData: {
+            title: 'So sánh YouTube Premium vs. YouTube Free',
+            headers: ['Tiêu chí', 'YouTube Premium', 'YouTube Free'],
+            rows: [
+                {
+                    feature: 'Quảng cáo',
+                    licensed: 'Không có quảng cáo',
+                    free: 'Có quảng cáo trước và giữa video'
+                },
+                {
+                    feature: 'Phát nền',
+                    licensed: 'Phát video khi tắt màn hình',
+                    free: 'Dừng khi tắt màn hình'
+                },
+                {
+                    feature: 'Tải offline',
+                    licensed: 'Tải video để xem offline',
+                    free: 'Không thể tải video'
+                },
+                {
+                    feature: 'YouTube Music',
+                    licensed: 'YouTube Music Premium miễn phí',
+                    free: 'YouTube Music có quảng cáo'
+                },
+                {
+                    feature: 'Chất lượng',
+                    licensed: 'Chất lượng cao nhất có sẵn',
+                    free: 'Chất lượng bị giới hạn'
+                }
+            ]
+        }
     },
     {
         id: 6,
         category: 'design',
-            title: 'Capcut Pro',
-            subtitle: 'Capcut Pro giá tốt nhất',
-            image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
-            originalPrice: '50,000đ / 1 tháng',
-            salePrice: '25,000đ / 1 tháng',
-            discount: 'GIẢM LÊN TỚI 50%',
-            processingTime: 'trong vòng 24h',
-            version: 'Capcut Pro',
-            description: 'Capcut Pro bản quyền, hỗ trợ đầy đủ tính năng chỉnh sửa video chuyên nghiệp.',
-            features: [
-                '1 tháng: 25k',
-                '1 năm: 220k',
-                'Chỉnh sửa video chuyên nghiệp',
-                'Kho hiệu ứng, template phong phú',
-                'Hỗ trợ xuất video chất lượng cao'
-            ],
-            whyBuy: 'Capcut Pro giúp bạn chỉnh sửa video chuyên nghiệp, giá tốt nhất, hỗ trợ đầy đủ tính năng.',
-            sku: 'CAPCUT_PRO'
+        title: 'ELSA Pro',
+        subtitle: 'Chỉ với 1,500đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '15,000đ',
+        salePrice: '1,500đ',
+        discount: 'GIẢM LÊN TỚI 90%',
+        processingTime: '15-30 phút',
+        version: 'ELSA Pro Lifetime',
+        description: 'Ứng dụng luyện phát âm tiếng Anh với AI',
+        features: [
+            'Phân tích phát âm chính xác với AI',
+            'Bài học cá nhân hóa',
+            'Từ vựng và ngữ pháp phong phú',
+            'Theo dõi tiến trình học tập'
+        ],
+        whyBuy: 'Giải pháp hoàn hảo để cải thiện khả năng nói tiếng Anh một cách tự nhiên và chính xác.',
+        sku: 'ELSA_PRO',
+        comparisonData: {
+            title: 'So sánh ELSA Pro vs. ELSA Free',
+            headers: ['Tiêu chí', 'ELSA Pro', 'ELSA Free'],
+            rows: [
+                {
+                    feature: 'Bài học',
+                    licensed: 'Hơn 7000 bài học và hoạt động',
+                    free: 'Chỉ một số bài học cơ bản'
+                },
+                {
+                    feature: 'Phân tích phát âm',
+                    licensed: 'Phân tích chi tiết từng âm',
+                    free: 'Phân tích cơ bản'
+                },
+                {
+                    feature: 'Theo dõi tiến trình',
+                    licensed: 'Báo cáo chi tiết và thống kê',
+                    free: 'Theo dõi hạn chế'
+                },
+                {
+                    feature: 'Chủ đề học',
+                    licensed: 'Đa dạng chủ đề: business, travel, academic',
+                    free: 'Chỉ chủ đề cơ bản'
+                },
+                {
+                    feature: 'Luyện tập',
+                    licensed: 'Không giới hạn luyện tập',
+                    free: 'Giới hạn số lần luyện tập'
+                }
+            ]
+        }
+    },
+    {
+        id: 7,
+        category: 'premium',
+        title: 'Tinder Platinum',
+        subtitle: 'Chỉ với 1,700đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/8129901/pexels-photo-8129901.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '17,000đ',
+        salePrice: '1,700đ',
+        discount: 'GIẢM LÊN TỚI 90%',
+        processingTime: '15-30 phút',
+        version: 'Tinder Platinum',
+        description: 'Tính năng cao cấp nhất của Tinder',
+        features: [
+            'Gửi tin nhắn trước khi match',
+            'Xem ai đã like bạn',
+            'Unlimited likes',
+            'Boost và Super Like miễn phí'
+        ],
+        whyBuy: 'Tăng cơ hội kết nối và tìm được người phù hợp nhanh chóng.',
+        sku: 'TINDER_PLATINUM',
+        comparisonData: {
+            title: 'So sánh Tinder Platinum vs. Tinder Free',
+            headers: ['Tiêu chí', 'Tinder Platinum', 'Tinder Free'],
+            rows: [
+                {
+                    feature: 'Likes mỗi ngày',
+                    licensed: 'Unlimited likes',
+                    free: 'Giới hạn likes mỗi ngày'
+                },
+                {
+                    feature: 'Xem ai like bạn',
+                    licensed: 'Xem tất cả người đã like',
+                    free: 'Không thể xem'
+                },
+                {
+                    feature: 'Tin nhắn trước match',
+                    licensed: 'Gửi tin nhắn trước khi match',
+                    free: 'Chỉ nhắn tin sau khi match'
+                },
+                {
+                    feature: 'Super Like',
+                    licensed: '5 Super Like miễn phí mỗi ngày',
+                    free: '1 Super Like miễn phí mỗi ngày'
+                },
+                {
+                    feature: 'Boost',
+                    licensed: '1 Boost miễn phí mỗi tháng',
+                    free: 'Không có Boost miễn phí'
+                }
+            ]
+        }
+    },
+    {
+        id: 8,
+        category: 'premium',
+        title: 'Tinder Gold',
+        subtitle: 'Chỉ với 1,300đ cho 1 ngày',
+        image: 'https://images.pexels.com/photos/8129901/pexels-photo-8129901.jpeg?auto=compress&cs=tinysrgb&w=100&h=100',
+        originalPrice: '13,000đ',
+        salePrice: '1,300đ',
+        discount: 'GIẢM LÊN TỚI 90%',
+        processingTime: '15-30 phút',
+        version: 'Tinder Gold',
+        description: 'Phiên bản nâng cao của Tinder',
+        features: [
+            'Xem ai đã like bạn',
+            'Unlimited likes',
+            'Monthly Boost miễn phí',
+            'Top Picks feature'
+        ],
+        whyBuy: 'Lựa chọn tối ưu cho những ai muốn trải nghiệm Tinder một cách hiệu quả.',
+        sku: 'TINDER_GOLD',
+        comparisonData: {
+            title: 'So sánh Tinder Gold vs. Tinder Free',
+            headers: ['Tiêu chí', 'Tinder Gold', 'Tinder Free'],
+            rows: [
+                {
+                    feature: 'Likes mỗi ngày',
+                    licensed: 'Unlimited likes',
+                    free: 'Giới hạn likes mỗi ngày'
+                },
+                {
+                    feature: 'Xem ai like bạn',
+                    licensed: 'Xem tất cả người đã like',
+                    free: 'Không thể xem'
+                },
+                {
+                    feature: 'Top Picks',
+                    licensed: 'Xem Top Picks hàng ngày',
+                    free: 'Không có Top Picks'
+                },
+                {
+                    feature: 'Super Like',
+                    licensed: '5 Super Like miễn phí mỗi ngày',
+                    free: '1 Super Like miễn phí mỗi ngày'
+                },
+                {
+                    feature: 'Boost',
+                    licensed: '1 Boost miễn phí mỗi tháng',
+                    free: 'Không có Boost miễn phí'
+                }
+            ]
+        }
     }
-    // ,
-    // {
-    //     id: 7,
-    //     category: 'premium',
-    //         ...existing code...
-    // },
-    // {
-    //     id: 8,
-    //     category: 'premium',
-    //         ...existing code...
-    // }
 ];
 
 // DOM elements
@@ -238,7 +510,7 @@ function renderProducts() {
                 <div class="product-body">
                     <div class="product-pricing">
                         <span class="price-original">${product.originalPrice}</span>
-                        <span class="price-sale">${product.salePrice}</span>
+                        <span class="price-sale">${product.salePrice}/ngày</span>
                     </div>
                     <button class="btn quick-view-btn w-100" onclick="showProductDetails(${product.id})">
                         <i class="fas fa-eye me-2"></i>Xem Nhanh
@@ -281,7 +553,7 @@ function showProductDetails(productId) {
                 <div class="price-info">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <span class="price-original-large">${product.originalPrice}</span>
-                        <span class="price-large">${product.salePrice}</span>
+                        <span class="price-large">${product.salePrice}/ngày</span>
                     </div>
                     <div class="savings text-center">
                         <i class="fas fa-tags me-1"></i>${product.discount}
@@ -293,7 +565,7 @@ function showProductDetails(productId) {
                     <p><strong>SKU:</strong> ${product.sku}</p>
                     <p><strong>Phiên bản:</strong> ${product.version}</p>
                     <p><strong>Thời gian xử lý:</strong> ${product.processingTime}</p>
-                    <p><strong>Hình thức xử lý:</strong> Nhắn thông tin qua Zalo / WhatsApp.</p>
+                    <p><strong>Hình thức giao hàng:</strong> Gửi link tới & tài khoản qua email/Zalo trong vòng ${product.processingTime} sau thanh toán</p>
                 </div>
 
                 <div class="contact-buttons">
@@ -304,7 +576,7 @@ function showProductDetails(productId) {
                         <i class="fab fa-whatsapp me-2"></i>WhatsApp
                     </a>
                     <button class="btn btn-purchase btn-sm flex-fill">
-                        <i class="fas fa-shopping-cart me-2"></i>Mua Ngay ${product.salePrice}
+                        <i class="fas fa-shopping-cart me-2"></i>Mua Ngay ${product.salePrice}/Ngày
                     </button>
                 </div>
             </div>
@@ -332,47 +604,24 @@ function showProductDetails(productId) {
                 </div>
 
                 <div class="product-detail-section">
-                    <h6 class="section-title">So sánh bản quyền vs. crack</h6>
+                    <h6 class="section-title">${product.comparisonData.title}</h6>
                     <div class="table-responsive">
                         <table class="comparison-table">
                             <thead>
                                 <tr>
-                                    <th class="feature-name">Tiêu chí</th>
-                                    <th>Bản quyền</th>
-                                    <th>Crack</th>
+                                    <th class="feature-name">${product.comparisonData.headers[0]}</th>
+                                    <th>${product.comparisonData.headers[1]}</th>
+                                    <th>${product.comparisonData.headers[2]}</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="feature-name">Tính ổn định</td>
-                                    <td class="text-success">Mượt mà, cập nhật chính thức</td>
-                                    <td class="text-danger">Dễ lỗi, treo máy</td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Cập nhật</td>
-                                    <td class="text-success">Tự động lên phiên bản mới</td>
-                                    <td class="text-danger">Không cập nhật được</td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Bảo mật</td>
-                                    <td class="text-success">An toàn, không mã độc</td>
-                                    <td class="text-danger">Nguy cơ virus, trojan</td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Tính năng</td>
-                                    <td class="text-success">100% AI & plugin chính hãng</td>
-                                    <td class="text-danger">Nhiều tính năng bị vô hiệu</td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Hỗ trợ</td>
-                                    <td class="text-success">Adobe & maosoft 1:1</td>
-                                    <td class="text-danger">Tự xử lý</td>
-                                </tr>
-                                <tr>
-                                    <td class="feature-name">Pháp lý</td>
-                                    <td class="text-success">Hợp pháp, yên tâm</td>
-                                    <td class="text-danger">Vi phạm bản quyền</td>
-                                </tr>
+                                ${product.comparisonData.rows.map(row => `
+                                    <tr>
+                                        <td class="feature-name">${row.feature}</td>
+                                        <td class="text-success">${row.licensed}</td>
+                                        <td class="text-danger">${row.free}</td>
+                                    </tr>
+                                `).join('')}
                             </tbody>
                         </table>
                     </div>
