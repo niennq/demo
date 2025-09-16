@@ -569,10 +569,10 @@ function showProductDetails(productId) {
                 </div>
 
                 <div class="contact-buttons">
-                    <a href="https://zalo.me/0123456789" class="btn btn-zalo btn-sm">
+                    <a href="https://zalo.me/0855586358" class="btn btn-zalo btn-sm">
                         <i class="fab fa-telegram me-2"></i>Zalo
                     </a>
-                    <a href="https://wa.me/0123456789" class="btn btn-whatsapp btn-sm">
+                    <a href="https://wa.me/0855586358" class="btn btn-whatsapp btn-sm">
                         <i class="fab fa-whatsapp me-2"></i>WhatsApp
                     </a>
                     <button class="btn btn-purchase btn-sm flex-fill">

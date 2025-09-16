@@ -534,6 +534,13 @@ body {
     }
 }
 
+/* CUSTOM: NIENNQ */
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        --bs-modal-width: 1200px;
+    }
+}
+
 /* Animation Classes */
 @keyframes fadeInUp {
     from {
